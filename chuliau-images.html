@@ -13,7 +13,8 @@ permalink: /chuliau/images.json
 "images": [
 {%- assign first = true -%}
 {%- for file in site.static_files -%}
-{%- if file.path contains '/chuliau/' and file.extname == '.jpg' -%}
+{%- assign ext = file.extname | downcase -%}
+{%- if file.path contains '/chuliau/' and ext == '.jpg' -%}
 {%- unless first -%},{%- endunless -%}
 "{{ file.name }}"
 {%- assign first = false -%}
