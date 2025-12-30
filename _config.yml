@@ -18,11 +18,11 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: 台語文記憶 冊讀á
+title: 1969 台灣教會公報
 email:
 description: >- # this means to ignore newlines until "baseurl:"
   Tâi-gí-bûn Kì-ek Chheh-tha̍k-á
-baseurl: "/scannedImgViewer"
+baseurl: "/TaioanHusiannKauhoePo1969"
 url: "https://kiek.taigi.info"
 
 # navigation
