@@ -5,7 +5,7 @@
 
 <body class="viewer">
   <header class="viewer__header">
-    <h1 id="viewer-title"><a href="{{ " /soatbeng/" | relative_url }}">{{ site.title | escape }}</a></h1>
+    <h1 id="viewer-title"><a href="{{ "/soatbeng/" | relative_url }}">{{ site.title | escape }}</a></h1>
     <div id="viewer-controller" class="viewer__header__controller">
       <ul>
         <li>
@@ -24,14 +24,14 @@
           </button>
         </li>
         <li>
-          <a href="{{ " /khiboo/" | relative_url }}" target="_blank">
+          <a href="{{ "/khiboo/" | relative_url }}" target="_blank">
             <button id="viewer-keyboard-hotkeys">
               <img src="{{ site.baseurl }}/assets/images/icons/keyboard.svg" alt="keyboard hotkeys" />
             </button>
           </a>
         </li>
         <li>
-          <a href="{{ " /soatbeng/" | relative_url }}">
+          <a href="{{ "/soatbeng/" | relative_url }}">
             <button id="viewer-goto-index">
               <img src="{{ site.baseurl }}/assets/images/icons/info.svg" alt="info" />
             </button>
@@ -75,12 +75,12 @@
   </footer>
 </body>
 <script>
-  {% if site.github %} {% assign baseUrl = "/" | append: site.github.repository_name %} {% else %} {% assign baseUrl = site.baseurl %} {% endif %}
+  {% if site.github %}{% assign baseUrl = "/" | append: site.github.repository_name %}{% else %}{% assign baseUrl = site.baseurl %}{% endif %}
   window.JEKYLL_CONFIG = {
     baseUrl: "{{ baseUrl }}"
   };
 </script>
-<script src="{{ " /assets/javascripts/openseadragon.min.js" | relative_url }}"></script>
-<script src="{{ " /assets/javascripts/viewer.js" | relative_url }}"></script>
+<script src="{{ "/assets/javascripts/openseadragon.min.js" | relative_url }}"></script>
+<script src="{{ "/assets/javascripts/viewer.js" | relative_url }}"></script>
 
 </html>
